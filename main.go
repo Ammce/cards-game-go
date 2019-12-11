@@ -1,8 +1,7 @@
 package main
 
 func main() {
-	cards := deck{"Queens", getCard()}
-	cards = append(cards, "Kings")
+	cards := newDeck()
 	cards.print()
 	// for i, card := range cards {
 	// 	fmt.Println(i, card)
