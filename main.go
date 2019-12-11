@@ -2,13 +2,19 @@ package main
 
 func main() {
 	cards := newDeck()
-	cards.print()
+	// cards.print()
+	// cars := []string{"Audi", "BMW", "Mercedes", "Opel", "Fiat"}
+	// fmt.Println(cars[3:])
 	// for i, card := range cards {
 	// 	fmt.Println(i, card)
 	// }
 	// for i := 0; i < 2; i++ {
 	// 	fmt.Println(cards[i])
 	// }
+
+	hand, remainingCars := deal(cards, 5)
+	hand.print()
+	remainingCars.print()
 
 }
 
