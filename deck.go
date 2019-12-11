@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 type deck []string
 
@@ -28,3 +30,14 @@ func (d deck) print() {
 func deal(d deck, handSize int) (deck, deck) {
 	return d[:handSize], d[handSize:]
 }
+
+// func retriveHearts(d deck) deck {
+// 	hearts := deck{}
+// 	for _, singleCard := range d {
+// 		splitedString := strings.Split(singleCard, " ")
+// 		if splitedString[2] == "Diamond" {
+// 			hearts = append(hearts, singleCard)
+// 		}
+// 	}
+// 	return hearts
+// }

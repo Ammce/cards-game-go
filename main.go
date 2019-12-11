@@ -16,6 +16,8 @@ func main() {
 	hand.print()
 	remainingCars.print()
 
+	// hearts := retriveHearts(cards)
+	// hearts.print()
 }
 
 func getCard() string {
