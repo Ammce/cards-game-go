@@ -12,12 +12,14 @@ func main() {
 	// 	fmt.Println(cards[i])
 	// }
 
-	hand, remainingCars := deal(cards, 5)
-	hand.print()
-	remainingCars.print()
+	// hand, remainingCars := deal(cards, 5)
+	// hand.print()
+	// remainingCars.print()
 
 	// hearts := retriveHearts(cards)
 	// hearts.print()
+
+	cards.saveToFile("myFile.txt")
 }
 
 func getCard() string {
