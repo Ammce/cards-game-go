@@ -20,6 +20,12 @@ func main() {
 	// hearts.print()
 
 	// cards.saveToFile("myFile.txt")
+
+	// numbers := []int{0, 1, 2, 3, 4, 5}
+	// rand.Shuffle(len(numbers), func(i, j int) {
+	// 	numbers[i], numbers[j] = numbers[j], numbers[i]
+	// })
+	// fmt.Println(numbers)
 	cards := newDeck()
 	cards.shuffle()
 	cards.print()
