@@ -1,7 +1,7 @@
 package main
 
 func main() {
-	cards := newDeck()
+	// cards := newDeck()
 	// cards.print()
 	// cars := []string{"Audi", "BMW", "Mercedes", "Opel", "Fiat"}
 	// fmt.Println(cars[3:])
@@ -19,7 +19,10 @@ func main() {
 	// hearts := retriveHearts(cards)
 	// hearts.print()
 
-	cards.saveToFile("myFile.txt")
+	// cards.saveToFile("myFile.txt")
+	cards := newDeck()
+	cards.shuffle()
+	cards.print()
 }
 
 func getCard() string {
